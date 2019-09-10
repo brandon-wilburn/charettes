@@ -1,0 +1,332 @@
+@font-face {
+	font-family: VCR;
+	src: url("VCR_OSD_MONO_1.001.ttf");
+}
+
+body {
+	font-family: 'Lexend Deca', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #000f1e;
+	background-color: #fff5e6;
+	font-size: 16px;
+}
+
+.container {
+	box-sizing: border-box;
+	padding: 60vh 5vw 0 5vw;
+}
+
+.row_container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5vw;
+}
+
+#singleBox {
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	position: absolute;
+	font-size: 15vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	line-height: 200px;
+	-webkit-user-select: none;     
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.box {
+	width: 15vw;
+	height: 15vw;
+	border: 2px solid black;
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+	background-clip: border-box;
+    cursor: pointer;
+    transition: box-shadow .5s ease-in-out;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.box:hover {
+	box-shadow: 0px 0px 5px black;
+}
+
+#tv_box {
+	width: 15vw;
+	height: 15vw;
+	border: 2px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: italic;
+    cursor: pointer;
+    transition: box-shadow .5s ease-in-out;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#tv_box:hover {
+	box-shadow: 0px 0px 5px black;
+}
+
+#firstbox:active {
+	border-radius: 7.5vw;
+	background-color: black;
+	color: #fff5e6;
+	cursor: grab;
+}
+
+#firstbox {
+	transition: border-radius .5s ease-in-out, background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+#secondbox {
+	background-color: #2E7BD9;
+}
+
+#secondbox:active {
+	background-color: white;
+}
+
+#thirdbox {
+	background-color: #FA7905;
+	flex-direction: column;
+}
+
+#plus {
+	position: relative;
+	float: left;
+}
+
+#fourthbox {
+	background-color: black;
+	color: #fff5e6;
+	transition: border-radius .5s ease-in-out;
+}
+
+#fourthbox:hover {
+	animation: rotater 3s linear infinite;
+	animation-duration: 6s;
+	border-radius: 15vw;
+}
+
+@keyframes rotater {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {transform: rotate(360deg);}
+}
+
+#buttonContainer {
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#remoteControl {
+	flex-direction: column;
+	background-image: url("assets/images/static.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: VCR;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.channelButton:hover {
+	color: red;
+}
+
+.channel {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	box-sizing: border-box;
+	font-family: VCR;
+	color: white;
+	padding: 10px 10px 10px 10px;
+}
+
+#spawner {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.spawnedBox {
+	width: 20px;
+	height: 20px;
+	background-color: black;
+}
+
+.small_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.small_container p {
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+}
+
+#redecorator:hover {
+	animation: shifty 5s linear infinite;
+	animation-duration: 10s;
+}
+
+@keyframes shifty {
+	0% {background-color: red;}
+	14.2% {background-color: orange;}
+	28.5% {background-color: yellow;}
+	42.75% {background-color: green;}
+	56.97% {background-color: blue;}
+	71.17% {background-color: indigo;}
+	85.37% {background-color: violet;}
+	100% {background-color: red;}
+}
+
+#redecorate {
+	text-align: center;
+}
+
+#redecorate:hover {
+	transform: rotate(45deg);
+}
+
+#blur {
+	text-align: center;
+}
+
+#theglasses {
+	color: #fff5e6;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#theglasses i {
+	font-size: 5vw;
+}
+
+#fhth_container {
+	height: 2vw;
+	width: 2vw;
+	border-radius: 1vw;
+	background-color: blue;
+}
+
+#fhth_container:hover {
+	animation: shifty 5s linear infinite;
+}
+
+#saturation {
+	overflow: hidden;
+}
+
+#saturation img {
+	transition: transform 5s ease-in-out, filter 5s ease-in-out;
+}
+
+#saturation:hover > img {
+		transform: scale(.45);
+		filter: saturate(100);
+}
+
+#radical {
+	background-color: black;
+	color: #fff5e6;
+}
+
+#blackBox {
+	background-color: black;
+	display: block;
+}
+
+#colorcircle {
+	animation: shifty 5s linear infinite;
+	display: block;
+}
+
+#bricky {
+	background-image: url("assets/images/bricks.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#c, #a, #m, #o {
+	opacity: 0;
+}
+
+#thickerbox {
+	border: 5px solid black;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+#nobo {
+	border: none;
+}
+
+#bouncy {
+	animation: shifty 5s linear infinite;
+}
+
+#bouncy:active {
+	animation-name: bouncier;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#please_go {
+	text-align: center;
+}
+
+#aggress:active {
+	text-transform: uppercase;
+	background-color: red;
+}
+
+@keyframes bouncier {
+    0%   {transform: scale(1,1);}
+    10%  {transform: scale(1.1,.9);}
+    30%  {transform: scale(.9,1.1);}
+    50%  {transform: scale(1,1);}
+    100% {transform: scale(1,1);}
+}
+
+
+

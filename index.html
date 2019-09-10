@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Charette</title>
+	<link href="styles.css" type="text/css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet"/>	
+	
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://kit.fontawesome.com/e2c53b87fa.js"></script>
+	<script src="maintainscroll.js"></script>
+</head>
+<body>
+	<h1>"Charettes"</h1>
+	<div class="container">
+		<div class="row_container">
+			<div class="box" id="firstbox">"Hold me"</div>
+			<div class="box" id="secondbox">"Squeeze me"</div>
+			<div class="box" id="thirdbox">
+				<p>"Rise"</p>
+				<div id="plus">+</div>
+			</div>
+			<div class="box" id="fourthbox">
+				<p>"Spin me"</p>
+			</div>
+			<div class="box" id="reset">"Reset row"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="tv_box">
+				<div class="channel" id="channelOne" onclick="enterChannel(1)">
+					1
+				</div>
+			</div>
+			<div class="box" id="tv_box">
+				<div class="channel" id="channelTwo" onclick="enterChannel(2)">
+					2
+				</div>
+			</div>
+			<div class="box" id="tv_box">
+				<div class="channel" id="channelThree" onclick="enterChannel(3)">
+					3
+				</div>
+			</div>
+			<div class="box" id="tv_box">
+				<div class="channel" id="channelFour" onclick="enterChannel(4)">
+					4
+				</div>
+			</div>
+			<div class="box" id="remoteControl">
+				<p>"Change the channel"<p>
+				<div id="buttonContainer">
+					<a class="channelButton" onclick="channel(-1)"><i class="fas fa-minus"></i></a>
+					<a class="channelButton" onclick="channel(1)"><i class="fas fa-plus"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="row_container">
+			<div class="box" onclick="spawner()">
+				<div class="small_container">
+					<p>"Create"</p>
+					<div id="spawner">
+						<div class="spawnedBox"></div>
+					</div>
+				</div>
+			</div>
+			<div class="box" id="redecorator">"ROY G. BIV"</div>
+			<div class="box" id="redecorate">"Brrr, the temperature is..."</div>
+			<div class="box" id="poof">"Dissappear"</div>
+			<div class="box" onclick="resetRowThree()"id="resetRowThree">"Reset row"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="blur">"My glasses. I can't see without my glasses"</div>
+			<div class="box" id="theglasses">
+				<p>"Tend to glasses"</p>
+				<i class="fas fa-glasses"></i>
+			</div>
+			<div class="box">
+				<div id="fhth_container">
+				</div>
+			</div>
+			<div class="box" id="saturation">
+				<img src ="https://images.unsplash.com/photo-1567446732195-14ae4baec622?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+			</div>
+			<div class="box" id="biggerBoxes">"Bigger boxes"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="sepia">"So sepia"</div>
+			<div class="box" id="sepia_less">"A little less sepia"</div>
+			<div class="box">"Free space"</div>
+			<div class="box" id="bbContainer">
+				<div id="blackBox">
+				</div>
+			</div>
+			<div class="box" id="radical">"Let's get radical"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="ccc">
+				<div id="colorcircle">
+				</div>
+			</div>
+			<div class="box" onclick="wavy()">
+				"Let's get wavy"
+			</div>
+			<div class="box" onclick="wavier()">
+				"Let's get wavier"
+			</div>
+			<div class="box" id="bricky"></div>
+			<div class="box" id="camo">
+				<p id="c">"C</p>
+				<p id="a">A</p>
+				<p id="m">M</p>
+				<p id="o">O"</p>
+			</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="thinbox">
+				<p>"2px"</p>
+			</div>
+			<div class="box" id="thickerbox">
+				<p>"5px"</p>
+			</div>
+			<div class="box" id="nobo">"No border"</div>
+			<div class="box" onclick="printHo()">"Print"</div>
+			<div class="box" onclick="getOut()">"Get out of here"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" onclick="lie()">"I'm an AI"</div>
+			<div class="box" onclick="woosh()">"Ok?"</div>
+			<div class="box" onclick="fire()">"Fire!"</div>
+			<div class="box" id="big">"Get big"</div>
+			<div class="box" id="bouncy"></div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="ball_pit">"Ball pit"</div>
+			<div class="box" id="square_dance">"Square dance"</div>
+			<div class="box" id="click_once">"Click once"</div>
+			<div class="box" id="double_click">"Double click"</div>
+			<div class="box" id="resetRowNine">"Reset row"</div>
+		</div>
+		<div class="row_container">
+			<div class="box" id="please_go">"Hate to see you go"</div>
+			<a href="index2.html"><div class="box">"Ok seriously, please leave"</div></a>
+			<div class="box" id="aggress">"Let's get aggressive"</div>
+			<div class="box" onclick="reload()">"Reset page"</div>
+		</div>
+	</div>
+	<script src="channel.js"></script>
+</body>
+</html>
